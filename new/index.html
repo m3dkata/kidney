@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #acacac;
+            /* background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            ); */
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            /* background-image: url(images/bg.png); */
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+          }
+          .icon-grid i {
+            font-size: 24px; /* Adjust icon size as needed */
+            transition: transform 0.3s;
+          }
+          .icon-grid i:hover {
+            transform: scale(1.1);
+          }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><p style="font-size: 0.8em;">ДЖАМИЯ БРЕЗНИЦА</p><img src="images/1.png" alt=""></div>
+            <div class="item" style="--position: 2"><img src="images/dragon_2.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="images/dragon_3.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="images/dragon_4.jpg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="images/dragon_5.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="images/dragon_6.jpg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="images/dragon_7.jpg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="images/dragon_8.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="images/dragon_9.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="images/dragon_10.jpg" alt=""></div>
+        </div>
+        <div class="content">
+            <h1 data-content="KIDNEY">
+                KIDNEY
+            </h1>
+            <div class="author">
+                <!-- <h2>by TRAPERA</h2> -->
+                <p><strong>SKILLS</strong></p>
+                <!-- <p>skills</p> -->
+                <div class="icon-grid">
+                    <!-- Programming Languages -->
+                    <div><i class="devicon-python-plain colored"></i></div>
+                    <div><i class="devicon-javascript-plain colored"></i></div>
+                    <div><i class="devicon-java-plain colored"></i></div>
+                    <div><i class="devicon-swift-plain colored"></i></div>
+                    
+                    <div><i class="devicon-kotlin-plain colored"></i></div>
+                    <div><i class="devicon-html5-plain colored"></i></div>
+                    <div><i class="devicon-css3-plain colored"></i></div>
+                    <div><i class="devicon-go-plain colored"></i></div>
+                    
+                    <!-- Databases -->
+                    <div><i class="devicon-mysql-plain colored"></i></div>
+                    <div><i class="devicon-postgresql-plain colored"></i></div>
+                    <div><i class="devicon-mongodb-plain colored"></i></div>
+                    <div><i class="devicon-sqlite-plain colored"></i></div>
+                    
+                    <!-- Frameworks -->
+                    <div><i class="devicon-django-plain colored"></i></div>
+                    <div><i class="devicon-react-original colored"></i></div>
+                    <div><i class="devicon-angularjs-plain colored"></i></div>
+                    <div><i class="devicon-nodejs-plain colored"></i></div>
+                  </div>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
